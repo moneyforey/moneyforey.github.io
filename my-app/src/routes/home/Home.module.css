@@ -1,0 +1,20 @@
+.icons{
+    color: #4db5ff;
+}
+
+.name{
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 68px;
+  color: #4db5ff;
+}
+
+
+.deg{
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 23px;
+    /* color: #4db5ff; */
+  }
