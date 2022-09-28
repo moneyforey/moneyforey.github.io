@@ -5,16 +5,15 @@ import { NavHashLink as Link } from 'react-router-hash-link';
 
 
 const About = () => {
-    return <Box p="100px"  className={styles.profile} my="100px" id="about">
+    return <Box backgroundColor="#4db5ff" p="100px" my="100px" id="about">
         <Text>Get to know</Text>
         <Heading className={styles.name}>About me</Heading>
-        <Flex direction={["column", "row", "row"]} align="center">
-            <Box >
-                <Image heigth="auto" width="200px" src={ME} alt="me" />
+        <Flex direction={["column", "column", "row"]} align="center">
 
-            </Box>
-            <Stack align='center'  m="20px">
-                <Text fontSize={["15px",'18px','23px']}  className={styles.deg} width="500px">An enthusiastic Web Developer with highly
+            <Image className={styles.boxpro} borderRadius="50%" width="200px" src={ME} alt="me" />
+            <Stack width="100%"  align='center' m="20px">
+                <Text textAlign="left" className={styles.desc} >
+                    An enthusiastic Web Developer with highly
                     motivated and leadership skills. Eager to
                     learn new technologies and methodologies.
                     Always willing to innovate new things which
@@ -22,7 +21,7 @@ const About = () => {
                 </Text>
 
                 <Link smooth to="#contacts">
-                    <Button className={styles.btn} >
+                    <Button variant="outline" className={styles.btn} >
                         Let's Talk
                     </Button>
                 </Link>

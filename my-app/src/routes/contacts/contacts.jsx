@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Heading, Stack, Text } from "@chakra-ui/react";
+import { Box, Button, Flex,Stack, Text } from "@chakra-ui/react";
 import { ImMail2 } from "react-icons/im";
 import { IoCall } from "react-icons/io5";
 import styles from "./contact.module.css"

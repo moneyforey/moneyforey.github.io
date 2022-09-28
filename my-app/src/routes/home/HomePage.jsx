@@ -7,7 +7,7 @@ import styles from "./Home.module.css";
 import { NavHashLink as Link } from 'react-router-hash-link';
 
 const HomePage = () => {
-  return <Flex direction={['column','row','row']} my="100px" align="center" gap={10}>
+  return <Flex direction={['column','column','row']} my="100px" align="center" gap={10}>
 
     <Stack textAlign="center">
 

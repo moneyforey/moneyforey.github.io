@@ -1,4 +1,4 @@
-import {  Box, Grid, Heading, Text } from "@chakra-ui/react";
+import {  Box, Grid,Text } from "@chakra-ui/react";
 import ProjectCard from "./ProjectCard";
 import GDG from"../Images/gdg.png";
 import Pharma from"../Images/pharmeasy.png";
@@ -60,7 +60,7 @@ const Projects = () => {
     return (
        <Box my='100px' id="projects">
         <Text className={styles.name}>Projects</Text>
-         <Grid templateColumns={['repeat(1, 1fr)','repeat(2, 1fr)','repeat(3, 1fr)']} gap={6}>
+         <Grid templateColumns={['repeat(1, 1fr)','repeat(1, 1fr)','repeat(3, 1fr)']} gap={6}>
             {
                 ProjectData.map((p)=>
                 <ProjectCard key={p.id} id={p.id} git={p.git} live={p.live} tech={p.tech} src={p.src} title={p.title} desc={p.desc} />

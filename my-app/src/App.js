@@ -6,6 +6,7 @@ import Contact from './routes/contacts/contacts';
 import HomePage from './routes/home/HomePage';
 import Projects from './routes/projects/Projects';
 import Skills from './routes/skills/Skills';
+import Statistics from './routes/Statistics/Statistics';
 
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
       <HomePage/>
       <About/>
       <Skills/>
-      <Projects/>
+      <Statistics/>
+      <Projects/>  
       <Navbar /> 
       <Contact/>
       <Footer/>
