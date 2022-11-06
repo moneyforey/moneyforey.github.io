@@ -1,6 +1,7 @@
 import {  Box, Grid,Text } from "@chakra-ui/react";
 import ProjectCard from "./ProjectCard";
 import GDG from"../Images/gdg.png";
+import btx24 from"../Images/btx24.png";
 import Pharma from"../Images/pharmeasy.png";
 import SBC from"../Images/shopbop.png";
 import LYST from"../Images/LYST.png";
@@ -11,6 +12,15 @@ import styles from"./ProjectCard.module.css";
 const ProjectData = [
     {
         id:0,
+        title: "Bitrix24 Clone",
+        src: btx24,
+        desc: "Bitrix24 is a website used for task & project management",
+        tech: ["React","Redux", "Express", "MongoDB"],
+        git:'https://github.com/Hashal890/Betrix24-Clone',
+        live:'https://betrix24-clone.vercel.app/'
+    },
+    {
+        id:1,
         title: "Google Digital Garage Clone",
         src: GDG,
         desc: "Google Digital Garage is an e-learning website which provides skill-basedlearning",
@@ -19,7 +29,7 @@ const ProjectData = [
         live:'https://google-digitalgarage.vercel.app/'
     },
     {
-        id:1,
+        id:2,
         title: "PharmEasy Clone",
         src: Pharma,
         desc: "PharmEasy is an e-Commerce website for medicines and provides pathology services",
@@ -28,7 +38,7 @@ const ProjectData = [
         live:'https://pharmeasyclone-chi.vercel.app/'
     },
     {
-        id:2,
+        id:3,
         title: "Shopbop Clone",
         src: SBC,
         desc: "Shop bop is an e-Commerce website for fashion-related products",
@@ -37,7 +47,7 @@ const ProjectData = [
         live:'https://cool-jalebi-15c080.netlify.app/',
     },
     {
-        id:3,
+        id:4,
         title: "LYST Clone",
         src: LYST,
         desc: "LYST is an e-Commerce website forfashion-related products.",
@@ -46,7 +56,7 @@ const ProjectData = [
         live:'https://astonishing-naiad-bfc963.netlify.app/'
     },
     {
-        id:4,
+        id:5,
         title: "BOBBI BROWN Clone",
         src: BBR ,
         desc: "BOBBI BROWN Clone is an e-Commerce website forfashion-related products.",

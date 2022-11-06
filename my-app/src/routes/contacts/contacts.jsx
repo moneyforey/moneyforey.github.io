@@ -13,7 +13,7 @@ const Contact =()=>{
                    <ImMail2/>
                     
                     <Text>moneyforey786@gmail.com</Text>
-                    <Button variant="outline" >
+                    <Button className={styles.btn} variant="outline" >
                         <a href="mailto:moneyforey786@gmail.com">Send me a mail</a>
                         </Button>
                    </Stack>

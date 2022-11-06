@@ -38,3 +38,8 @@
     padding: .8rem;
     color: var(--color-white);
   }
+
+
+  .link:hover{
+       color: #2c2c6c;
+  }

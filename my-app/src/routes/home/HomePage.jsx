@@ -3,6 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
 import { MdWavingHand } from "react-icons/md";
 import img from"../Images/programmer.png"
+// import CV from'../Iamges/Manish_Faujdar_Resume.pdf';
 import styles from "./Home.module.css";
 import { NavHashLink as Link } from 'react-router-hash-link';
 
@@ -27,14 +28,14 @@ const HomePage = () => {
 
       </Flex>
       <Flex gap={10}>
-        <Button variant="outline">
-          <a href='../Iamges/Manish_Faujdar_Resume.pdf' download>
-          Download CV
+        <Button className={styles.btn} variant="outline">
+          <a href='https://drive.google.com/file/d/1nfkjAlzCYOGhl7pewaCPymuXSRZ9ylgr/view?usp=share_link'>
+          Resume
           </a>
         </Button>
        
         <Link smooth to="#contacts">
-        <Button bg="#4db5ff">
+        <Button className={styles.btn} bg="#4db5ff">
           Let's Talk
           </Button>
           </Link>

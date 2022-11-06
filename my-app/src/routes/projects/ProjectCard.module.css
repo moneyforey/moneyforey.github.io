@@ -15,6 +15,11 @@
     color: #4db5ff;
 }
 
+.icon:hover{
+    color: #4db5ff;
+    
+}
+
 .skillflex{
     align-items: center;
 }

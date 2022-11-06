@@ -18,3 +18,7 @@
     line-height: 23px;
     /* color: #4db5ff; */
   }
+
+  .btn:hover{
+        color: #4db5ff;
+  }

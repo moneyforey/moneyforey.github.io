@@ -1,6 +1,7 @@
 import './App.css';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
+// import Sidebar from './components/Sidebar';
 import About from './routes/about/About';
 import Contact from './routes/contacts/contacts';
 import HomePage from './routes/home/HomePage';
@@ -18,6 +19,7 @@ function App() {
       <Skills/>
       <Statistics/>
       <Projects/>  
+      {/* <Sidebar/> */}
       <Navbar /> 
       <Contact/>
       <Footer/>

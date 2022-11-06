@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Img, Text } from '@chakra-ui/react';
+import { Box,Heading, Img, Stack, Text } from '@chakra-ui/react';
 import GitHubCalendar from 'react-github-calendar';
 import styles from "./statistics.module.css"
 
@@ -27,17 +27,26 @@ const Statistics = () => {
         <Box p="100px" backgroundColor="#4db5ff" width="100%">
             <Heading className={styles.name}>Statistics</Heading>
             <Text>My contributions</Text>
-            <Flex justify="space-around" direction={["column", "column", "row"]}  >
+            <Stack justify="space-around" alignItems='center'>
                
                 <GitHubCalendar
                     username="moneyforey"
                     transformData={selectLastHalfYear}
                     hideColorLegend />
-
-               <Box>
-               <Img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=moneyforey&show_icons=true&locale=en&layout=compact" alt="moneyforey" />
+                 <Box>
+                <Img src='https://github-readme-stats.vercel.app/api?username=moneyforey' alt='moneyforey'/>
                </Box>
-            </Flex>
+               <Box>
+               <Img align="left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=moneyforey&layout=compact" alt="moneyforey" />
+               </Box>
+               <Box>
+                <Img src='https://streak-stats.demolab.com/?user=moneyforey' alt='moneyforey'/>
+               </Box>
+
+              
+
+
+            </Stack>
            
         </Box>
     )
