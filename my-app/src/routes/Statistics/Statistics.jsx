@@ -42,10 +42,6 @@ const Statistics = () => {
                <Box>
                 <Img src='https://streak-stats.demolab.com/?user=moneyforey' alt='moneyforey'/>
                </Box>
-
-              
-
-
             </Stack>
            
         </Box>
