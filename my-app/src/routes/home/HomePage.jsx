@@ -23,13 +23,13 @@ const HomePage = () => {
       <Flex justify='space-around' gap={10}>
 
         <a href="https://www.linkedin.com/in/manish-faujdar-b485b2172/" target='blank'><BsLinkedin className={styles.icons} /></a>
-        <a href="https://github.com/moneyforey">< FaGithub  className={styles.icons}/></a>
+        <a href="https://github.com/moneyforey" target='blank'>< FaGithub  className={styles.icons}/></a>
 
 
       </Flex>
       <Flex gap={10}>
         <Button className={styles.btn} variant="outline">
-          <a href='https://drive.google.com/file/d/1nfkjAlzCYOGhl7pewaCPymuXSRZ9ylgr/view?usp=share_link'>
+          <a href='https://drive.google.com/file/d/1nfkjAlzCYOGhl7pewaCPymuXSRZ9ylgr/view?usp=share_link' target='blank'>
           Resume
           </a>
         </Button>

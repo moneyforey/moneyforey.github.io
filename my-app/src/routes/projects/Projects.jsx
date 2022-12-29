@@ -26,7 +26,7 @@ const ProjectData = [
         desc: "Google Digital Garage is an e-learning website which provides skill-basedlearning",
         tech: ["React JS", "Chakra UI"],
         git:'https://github.com/moneyforey/sweet-sea-507/tree/main/google-digitalgarage',
-        live:'https://google-digitalgarage.vercel.app/'
+        live:'https://google-digitalgarage-moneyforey.vercel.app/'
     },
     {
         id:2,
