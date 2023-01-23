@@ -16,11 +16,11 @@ const ProjectCard = ({ id, src, desc, title, tech, live, git }) => {
             <Flex justify="space-around">
                 <Button
                     className={styles.icon} variant="outline">
-                    <a href={git}>
+                    <a href={git} target='_blank' rel="noopener">
                         < FaGithub />
                     </a></Button>
                 <Button className={styles.icon}>
-                    <a href={live}>
+                    <a href={live} target='_blank' rel="noopener">
                         <FaExternalLinkAlt />
                     </a>
                 </Button>

@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.14275177.css",
-    "main.js": "/static/js/main.e8bfc47e.js",
+    "main.css": "/static/css/main.36a7abec.css",
+    "main.js": "/static/js/main.8c468711.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/shopbop.png": "/static/media/shopbop.b40856d63b938bafaf69.png",
+    "static/media/apnatv.png": "/static/media/apnatv.94137679b6edaac8c608.png",
     "static/media/LYST.png": "/static/media/LYST.2fd252b9ca0ba542e52f.png",
     "static/media/pharmeasy.png": "/static/media/pharmeasy.c4c1ba3564c23b8241b4.png",
     "static/media/programmer.png": "/static/media/programmer.1140d9a671412218ed4c.png",
@@ -12,12 +13,12 @@
     "static/media/bbbrown.png": "/static/media/bbbrown.b9e3d39765eb05dafc17.png",
     "static/media/mypro.png": "/static/media/mypro.f384b3379429d34ac5af.png",
     "index.html": "/index.html",
-    "main.14275177.css.map": "/static/css/main.14275177.css.map",
-    "main.e8bfc47e.js.map": "/static/js/main.e8bfc47e.js.map",
+    "main.36a7abec.css.map": "/static/css/main.36a7abec.css.map",
+    "main.8c468711.js.map": "/static/js/main.8c468711.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.14275177.css",
-    "static/js/main.e8bfc47e.js"
+    "static/css/main.36a7abec.css",
+    "static/js/main.8c468711.js"
   ]
 }
