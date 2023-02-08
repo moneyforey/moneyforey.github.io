@@ -7,6 +7,7 @@ import SBC from"../Images/shopbop.png";
 import LYST from"../Images/LYST.png";
 import BBR from"../Images/bbbrown.png";
 import APNA from"../Images/apnatv.png";
+import calci from"../Images/calci.png";
 import styles from"./ProjectCard.module.css";
 
 
@@ -33,7 +34,7 @@ const ProjectData = [
         id:2,
         title: "Google Digital Garage Clone",
         src: GDG,
-        desc: "Google Digital Garage is an e-learning website which provides skill-basedlearning",
+        desc: "Google Digital Garage is an e-learning website which provides skill-based learning",
         tech: ["React JS", "Chakra UI"],
         git:'https://github.com/moneyforey/sweet-sea-507/tree/main/google-digitalgarage',
         live:'https://google-digitalgarage-moneyforey.vercel.app/'
@@ -60,7 +61,7 @@ const ProjectData = [
         id:5,
         title: "LYST Clone",
         src: LYST,
-        desc: "LYST is an e-Commerce website forfashion-related products.",
+        desc: "LYST is an e-Commerce website for fashion-related products.",
         tech: ["HTML","CSS", "JavaScript", "Bootstrap"],
         git:'https://github.com/ShubhamRandive1/Clone-Lyst.com-Website',
         live:'https://astonishing-naiad-bfc963.netlify.app/'
@@ -69,10 +70,19 @@ const ProjectData = [
         id:6,
         title: "BOBBI BROWN Clone",
         src: BBR ,
-        desc: "BOBBI BROWN Clone is an e-Commerce website forfashion-related products.",
+        desc: "BOBBI BROWN Clone is an e-Commerce website for fashion-related products.",
         tech: ["HTML","CSS", "JavaScript"],
         git:'https://github.com/devendnpm/bobbi_brown_clone',
         live:'https://wondrous-souffle-24e26c.netlify.app/index.html',
+    },
+    {
+        id:7,
+        title: "Calculator",
+        src: calci ,
+        desc: "Calculator is used for simple airthmatic operations",
+        tech: ["HTML","CSS", "JavaScript"],
+        git:'https://github.com/moneyforey/mycalci',
+        live:'https://masai-calculator.vercel.app/',
     }
 ]
 const Projects = () => {

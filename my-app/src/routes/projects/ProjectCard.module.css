@@ -9,6 +9,7 @@
 .box2:hover{
     background-color: transparent;
     border: 1px solid #4db5ff;
+    z-index: 1;
 }
 
 .icon{

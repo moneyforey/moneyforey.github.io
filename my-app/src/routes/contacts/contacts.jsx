@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import {
     Container,
     Flex,
@@ -22,8 +24,40 @@ import {
     MdOutlineEmail,
   } from 'react-icons/md';
   import { BsPerson } from 'react-icons/bs';
-  
-  export default function contact() {
+  import { useRef } from 'react';
+
+  const initData ={
+    user_name:'',
+    user_email:'',
+    message:''
+  };
+
+  const Contact=()=> {
+    const [data,setData] = useState(initData);
+    const form = useRef();
+    const {user_name,user_email,message} = data;
+    const handleChange=(e)=>{
+        const {name,value} = e.target;
+        setData({
+          ...data,
+          [name]:value
+        })
+    }
+
+    const handleClick=(e)=>{
+      e.preventDefault();
+      console.log(data);
+      console.log(form.current.user_name,form.current.user_email,form.current.message);
+      emailjs.sendForm('service_wrq0sct', 'template_j9l426f',form.current, 'ek9hGeo_2J_fK8_Sy')
+      .then((result) => {
+        console.log('messaeg send')
+          console.log(result.text);
+      }, (error) => {
+        console.log('message not sent')
+          console.log(error.text);
+      });
+    }
+
     return (
       <Container  maxW="full" mt={0} id="contacts" centerContent overflow="hidden">
         <Flex>
@@ -80,15 +114,16 @@ import {
                 <WrapItem>
                   <Box bg="white" borderRadius="lg">
                     <Box m={8} color="#0B0E3F">
-                      <VStack spacing={5}>
-                        <FormControl id="name">
+                      {/* <form ref={form}> */}
+                      <VStack ref={form} spacing={5}>
+                        <FormControl  id="name">
                           <FormLabel>Your Name</FormLabel>
                           <InputGroup borderColor="#E0E1E7">
                             <InputLeftElement
                               pointerEvents="none"
                               children={<BsPerson color="gray.800" />}
                             />
-                            <Input type="text" size="md" />
+                            <Input type="text" name="user_name" value={user_name} onChange={handleChange} size="md" />
                           </InputGroup>
                         </FormControl>
                         <FormControl id="name">
@@ -98,12 +133,15 @@ import {
                               pointerEvents="none"
                               children={<MdOutlineEmail color="gray.800" />}
                             />
-                            <Input type="text" size="md" />
+                            <Input type="email" name="user_email" value={user_email} onChange={handleChange}  size="md" />
                           </InputGroup>
                         </FormControl>
-                        <FormControl id="name">
+                        <FormControl  id="name">
                           <FormLabel>Message</FormLabel>
                           <Textarea
+                          onChange={handleChange}
+                           name="message"
+                           value={message}
                             borderColor="gray.300"
                             _hover={{
                               borderRadius: 'gray.300',
@@ -111,8 +149,9 @@ import {
                             placeholder="message"
                           />
                         </FormControl>
-                        <FormControl id="name" float="right">
+                        <FormControl  id="name" float="right">
                           <Button
+                          onClick={handleClick}
                             variant="solid"
                             bg="#0D74FF"
                             color="white"
@@ -121,6 +160,7 @@ import {
                           </Button>
                         </FormControl>
                       </VStack>
+                      {/* </form> */}
                     </Box>
                   </Box>
                 </WrapItem>
@@ -131,3 +171,5 @@ import {
       </Container>
     );
   }
+
+  export default Contact;
