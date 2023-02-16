@@ -47,11 +47,12 @@ import {
     const handleClick=(e)=>{
       e.preventDefault();
       console.log(data);
-      console.log(form.current.user_name,form.current.user_email,form.current.message);
+      console.log(data.user_name,form.current.user_email,form.current.message);
       emailjs.sendForm('service_wrq0sct', 'template_j9l426f',form.current, 'ek9hGeo_2J_fK8_Sy')
       .then((result) => {
         console.log('messaeg send')
           console.log(result.text);
+          alert('Thankyou! I will reachout to you soon');
       }, (error) => {
         console.log('message not sent')
           console.log(error.text);
@@ -113,10 +114,10 @@ import {
                 </WrapItem>
                 <WrapItem>
                   <Box bg="white" borderRadius="lg">
-                    <Box m={8} color="#0B0E3F">
-                      {/* <form ref={form}> */}
-                      <VStack ref={form} spacing={5}>
-                        <FormControl  id="name">
+                    <Box m={8} color="#0B0E3F">      
+                      <VStack  spacing={5} >
+                        <form ref={form} action="">
+                        {/* <FormControl  id="name"> */}
                           <FormLabel>Your Name</FormLabel>
                           <InputGroup borderColor="#E0E1E7">
                             <InputLeftElement
@@ -125,8 +126,8 @@ import {
                             />
                             <Input type="text" name="user_name" value={user_name} onChange={handleChange} size="md" />
                           </InputGroup>
-                        </FormControl>
-                        <FormControl id="name">
+                        {/* </FormControl> */}
+                        {/* <FormControl id="name"> */}
                           <FormLabel>Mail</FormLabel>
                           <InputGroup borderColor="#E0E1E7">
                             <InputLeftElement
@@ -135,8 +136,8 @@ import {
                             />
                             <Input type="email" name="user_email" value={user_email} onChange={handleChange}  size="md" />
                           </InputGroup>
-                        </FormControl>
-                        <FormControl  id="name">
+                        {/* </FormControl> */}
+                        {/* <FormControl  id="name"> */}
                           <FormLabel>Message</FormLabel>
                           <Textarea
                           onChange={handleChange}
@@ -148,9 +149,10 @@ import {
                             }}
                             placeholder="message"
                           />
-                        </FormControl>
+                        {/* </FormControl> */}
                         <FormControl  id="name" float="right">
                           <Button
+                          type='submit'
                           onClick={handleClick}
                             variant="solid"
                             bg="#0D74FF"
@@ -159,8 +161,8 @@ import {
                             Send Message
                           </Button>
                         </FormControl>
+                        </form>
                       </VStack>
-                      {/* </form> */}
                     </Box>
                   </Box>
                 </WrapItem>
