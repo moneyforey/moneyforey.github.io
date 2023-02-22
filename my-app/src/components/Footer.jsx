@@ -1,6 +1,6 @@
-import { Box, Button, Container, Flex, Heading, Stack } from "@chakra-ui/react"
+import { Box, Button, Container, Flex, Heading, Stack, Text } from "@chakra-ui/react"
 import { HashLink as Link } from "react-router-hash-link";
-import { BsLinkedin } from "react-icons/bs"
+import { BsLinkedin,BsFillHeartFill } from "react-icons/bs"
 import { FaGithub } from "react-icons/fa";
 import styles from "./components.module.css"
 
@@ -27,6 +27,10 @@ const Footer = () => {
                         <FaGithub color="black"/>
                     </Button>
                    </a>
+                </Flex>
+                <Flex style={{alignItems:'center',gap:'.5rem',justifyContent:"center"}}>
+                <Text>Design by Me with  </Text>
+                   <BsFillHeartFill color="#2c2c6c" />
                 </Flex>
             </Stack>
         </Container>
