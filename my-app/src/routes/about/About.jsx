@@ -10,14 +10,9 @@ const About = () => {
         <Heading className={styles.name}>About me</Heading>
         <Flex direction={["column", "column", "row"]} align="center">
 
-            <Image className={styles.boxpro} borderRadius="50%" width="200px" src={ME} alt="me" />
+            <Image className={styles.boxpro} borderRadius="50%" width="200px" height='200px' src={ME} alt="me"/>
             <Stack width="100%"  align='center' m="20px">
                 <Text textAlign="left" className={styles.desc} >
-                    {/* An enthusiastic Web Developer with highly
-                    motivated and leadership skills. Eager to
-                    learn new technologies and methodologies.
-                    Always willing to innovate new things which
-                    can improve the existing technology. */}
                     An Enthusiastic, Self-Motivated, and Aspiring Full stack Web Developer with a specialization in MERN stack. Well-versed in technology and writing code to create applications that are reliable and user-friendly. Looking for an opportunity where I can apply my knowledge and skills in programming within an organization that will utilize and enhance my talents to the fullest.
                 </Text>
 

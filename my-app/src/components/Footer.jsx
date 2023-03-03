@@ -28,7 +28,7 @@ const Footer = () => {
                     </Button>
                    </a>
                 </Flex>
-                <Flex style={{alignItems:'center',gap:'.5rem',justifyContent:"center"}}>
+                <Flex style={{alignItems:'center',gap:'.5rem',justifyContent:"center"}} pt='10'>
                 <Text>Design by Me with  </Text>
                    <BsFillHeartFill color="#2c2c6c" />
                 </Flex>
